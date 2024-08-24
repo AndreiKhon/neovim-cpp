@@ -31,5 +31,6 @@ Neovim config for C++ development
 * [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
 * [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 * [rcarriga/nvim-dap-ui](https://github.com/rcarriga/nvim-dap-ui)
+* [Shatur/neovim-tasks](https://github.com/Shatur/neovim-tasks)
 * [williamboman/mason](https://github.com/williamboman/mason.nvim)
 * [williamboman/mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim)
