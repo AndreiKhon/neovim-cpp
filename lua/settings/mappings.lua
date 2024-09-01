@@ -16,6 +16,13 @@ map('n', '<Leader>mt', require('mini.map').toggle, { desc = 'Toggle' })
 -- Lsp
 map('n', '<Leader>lf', vim.lsp.buf.format, { desc = 'Format file' })
 map('n', '<leader>ld', vim.diagnostic.setloclist, { desc = 'Diagnostic loclist' })
+map('n', '<leader>lt', vim.lsp.buf.type_definition, { desc = 'Go to Type declaration' })
+map('n', '<leader>ls', vim.lsp.buf.signature_help, { desc = 'Show signature help' })
+map('n', '<leader>lr', vim.lsp.buf.references, { desc = 'Show references' })
+map({ 'n', 'v' }, '<leader>la', vim.lsp.buf.code_action, { desc = 'Code action' })
+map('n', 'gD', vim.lsp.buf.declaration, { desc = 'Go to Declaration' })
+map('n', 'gd', vim.lsp.buf.definition, { desc = 'Go to Definition' })
+map('n', 'gi', vim.lsp.buf.implementation, { desc = 'Go to Implementation' })
 -- Dap
 map('n', '<F5>', require('dap').continue, { desc = 'Continue' })
 map('n', '<F8>', require('dap').step_over, { desc = 'Step over' })
