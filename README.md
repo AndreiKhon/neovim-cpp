@@ -18,6 +18,7 @@ Neovim config for C++ development
   - [mini.map](https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-map.md)
   - [mini.notify](https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-notify.md)
   - [mini.pairs](https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-pairs.md)
+  - [mini.pick](https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-pick.md)
   - [mini.session](https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-sessions.md)
   - [mini.statusline](https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-statusline.md)
   - [mini.starter](https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-starter.md)

@@ -32,6 +32,7 @@ now(function() require('mini.tabline').setup() end)
 
 
 later(function() require('mini.ai').setup() end)
+later(function() require('mini.pick').setup() end)
 later(function()
   require('mini.clue').setup({
     triggers = {
@@ -70,6 +71,7 @@ later(function()
       { mode = 'n', keys = '<Leader>m', desc = 'Mini map' },
       { mode = 'n', keys = '<Leader>l', desc = 'Lsp' },
       { mode = 'n', keys = '<Leader>d', desc = 'Debug adapter protocol' },
+      { mode = 'n', keys = '<Leader>f', desc = 'Mini pick' },
     },
   })
 end)

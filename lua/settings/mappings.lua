@@ -13,6 +13,12 @@ map('n', '<Leader>mo', require('mini.map').open, { desc = 'Open' })
 map('n', '<Leader>mr', require('mini.map').refresh, { desc = 'Refresh' })
 map('n', '<Leader>ms', require('mini.map').toggle_side, { desc = 'Toggle side' })
 map('n', '<Leader>mt', require('mini.map').toggle, { desc = 'Toggle' })
+-- Mini pick
+map('n', '<Leader>ff', require('mini.pick').builtin.files, { desc = 'Files' })
+map('n', '<Leader>fb', require('mini.pick').builtin.buffers, { desc = 'Buffers' })
+map('n', '<Leader>fg', require('mini.pick').builtin.grep_live, { desc = 'Grep live' })
+map('n', '<Leader>fr', require('mini.pick').builtin.resume, { desc = 'Resume' })
+map('n', '<Leader>fh', require('mini.pick').builtin.help, { desc = 'Help' })
 -- Lsp
 map('n', '<Leader>lf', vim.lsp.buf.format, { desc = 'Format file' })
 map('n', '<leader>ld', vim.diagnostic.setloclist, { desc = 'Diagnostic loclist' })
