@@ -138,3 +138,17 @@ later(function()
     dap_open_command = function() return require('dap').continue() end -- Command to run after starting DAP session. You can set it to `false` if you don't want to open anything or `require('dapui').open` if you are using https://github.com/rcarriga/nvim-dap-ui
   })
 end)
+
+later(function()
+  add({
+    source = 'drmikehenry/vim-headerguard'
+  })
+  vim.cmd [[
+    function! g:HeaderguardName()
+      let time = substitute(strftime('%c'), '\s\|:', '', 'g')
+      let salt = 'JapaneseSeaSalt' . time
+      let headerguard = expand('%:t:gs/[^0-9a-zA-Z_]//g') . salt
+      return 'H_' . toupper(sha256(headerguard))
+    endfunction
+  ]]
+end)

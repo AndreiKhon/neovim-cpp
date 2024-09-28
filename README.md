@@ -27,6 +27,7 @@ Neovim config for C++ development
     
 </details>
 
+* [drmikehenry/vim-headerguard](https://github.com/drmikehenry/vim-headerguard)
 * [HiPhish/rainbow-delimeters.nvim](https://github.com/HiPhish/rainbow-delimiters.nvim)
 * [mfussenegger/nvim-dap](https://github.com/mfussenegger/nvim-dap)
 * [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)

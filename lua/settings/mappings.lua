@@ -51,3 +51,12 @@ map('n', '<Leader>ds', function()
   local widgets = require('dap.ui.widgets')
   widgets.centered_float(widgets.scopes)
 end, { desc = 'Widget centered float scopes' })
+-- Headerguard
+vim.api.nvim_create_autocmd({ 'BufRead', 'BufNewFile' },
+  {
+    pattern = { '*.h', '*.hpp' },
+    callback = function(event)
+      map('n', '<Leader>h', '<cmd>HeaderguardAdd<CR>',
+        { desc = 'Add Header guard', buffer = event.buf })
+    end,
+  })
